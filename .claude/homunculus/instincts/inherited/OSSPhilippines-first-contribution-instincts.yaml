@@ -1,0 +1,342 @@
+# Instincts generated from https://github.com/tadanobutubutu/OSSPhilippines-first-contribution
+# Generated: 2026-07-18T15:41:55.553Z
+# Version: 2.0
+# NOTE: This file supplements (does not replace) any existing curated instincts.
+# High-confidence manually curated instincts should be preserved alongside these.
+
+---
+id: OSSPhilippines-first-contribution-commit-length
+trigger: "when writing a commit message"
+confidence: 0.6
+domain: git
+source: repo-analysis
+source_repo: https://github.com/tadanobutubutu/OSSPhilippines-first-contribution
+---
+
+# OSSPhilippines First Contribution Commit Length
+
+## Action
+
+Keep commit messages concise (~49 characters)
+
+## Evidence
+
+- Average commit message length: 49 chars
+- Based on 5 commits
+
+---
+id: OSSPhilippines-first-contribution-naming-files
+trigger: "when creating a new file"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/tadanobutubutu/OSSPhilippines-first-contribution
+---
+
+# OSSPhilippines First Contribution Naming Files
+
+## Action
+
+Use camelCase naming convention
+
+## Evidence
+
+- Analyzed file naming patterns in repository
+- Dominant pattern: camelCase
+
+---
+id: OSSPhilippines-first-contribution-import-relative
+trigger: "when importing modules"
+confidence: 0.75
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/tadanobutubutu/OSSPhilippines-first-contribution
+---
+
+# OSSPhilippines First Contribution Import Relative
+
+## Action
+
+Use relative imports for project files
+
+## Evidence
+
+- Import analysis shows relative import pattern
+- Example: import { x } from '../lib/x'
+
+---
+id: OSSPhilippines-first-contribution-export-style
+trigger: "when exporting from a module"
+confidence: 0.7
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/tadanobutubutu/OSSPhilippines-first-contribution
+---
+
+# OSSPhilippines First Contribution Export Style
+
+## Action
+
+Prefer named exports
+
+## Evidence
+
+- Export pattern analysis
+- Dominant style: named
+
+---
+id: OSSPhilippines-first-contribution-test-separate
+trigger: "when writing tests"
+confidence: 0.8
+domain: testing
+source: repo-analysis
+source_repo: https://github.com/tadanobutubutu/OSSPhilippines-first-contribution
+---
+
+# OSSPhilippines First Contribution Test Separate
+
+## Action
+
+Place tests in the tests/ or __tests__/ directory, mirroring src structure
+
+## Evidence
+
+- Separate test directory pattern detected
+- Tests live in dedicated test folders
+
+---
+id: OSSPhilippines-first-contribution-workflow-update-contributor-profile
+trigger: "when doing update contributor profile"
+confidence: 0.6
+domain: workflow
+source: repo-analysis
+source_repo: https://github.com/tadanobutubutu/OSSPhilippines-first-contribution
+---
+
+# OSSPhilippines First Contribution Workflow Update Contributor Profile
+
+## Action
+
+Follow the update-contributor-profile workflow:
+1. Edit the relevant contributor's JSON file in the contributors/ directory.
+2. Commit the changes with a descriptive message.
+
+## Evidence
+
+- Workflow detected from commit patterns
+- Frequency: ~2x per month
+- Files: contributors/*.json
+
+---
+id: ossphilippines-first-contribution-instinct-camelcase-filenames
+trigger: "When creating or renaming a file."
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: tadanobutubutu/OSSPhilippines-first-contribution
+---
+
+# Ossphilippines First Contribution Instinct Camelcase Filenames
+
+## Action
+
+Name the file using camelCase.
+
+## Evidence
+
+- Pattern in namingConventions.files: camelCase
+
+---
+id: ossphilippines-first-contribution-instinct-camelcase-functions
+trigger: "When defining a function."
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: tadanobutubutu/OSSPhilippines-first-contribution
+---
+
+# Ossphilippines First Contribution Instinct Camelcase Functions
+
+## Action
+
+Name the function using camelCase.
+
+## Evidence
+
+- Pattern in namingConventions.functions: camelCase
+
+---
+id: ossphilippines-first-contribution-instinct-pascalcase-classes
+trigger: "When defining a class."
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: tadanobutubutu/OSSPhilippines-first-contribution
+---
+
+# Ossphilippines First Contribution Instinct Pascalcase Classes
+
+## Action
+
+Name the class using PascalCase.
+
+## Evidence
+
+- Pattern in namingConventions.classes: PascalCase
+
+---
+id: ossphilippines-first-contribution-instinct-screaming-constants
+trigger: "When defining a constant."
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: tadanobutubutu/OSSPhilippines-first-contribution
+---
+
+# Ossphilippines First Contribution Instinct Screaming Constants
+
+## Action
+
+Name the constant using SCREAMING_SNAKE_CASE.
+
+## Evidence
+
+- Pattern in namingConventions.constants: SCREAMING_SNAKE_CASE
+
+---
+id: ossphilippines-first-contribution-instinct-relative-imports
+trigger: "When importing modules."
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: tadanobutubutu/OSSPhilippines-first-contribution
+---
+
+# Ossphilippines First Contribution Instinct Relative Imports
+
+## Action
+
+Use relative import paths.
+
+## Evidence
+
+- Pattern in importStyle: relative
+
+---
+id: ossphilippines-first-contribution-instinct-named-exports
+trigger: "When exporting functions or variables."
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: tadanobutubutu/OSSPhilippines-first-contribution
+---
+
+# Ossphilippines First Contribution Instinct Named Exports
+
+## Action
+
+Use named exports.
+
+## Evidence
+
+- Pattern in exportStyle: named
+
+---
+id: ossphilippines-first-contribution-instinct-test-separate-folder
+trigger: "When adding or updating tests."
+confidence: 0.7
+domain: testing
+source: repo-analysis
+source_repo: tadanobutubutu/OSSPhilippines-first-contribution
+---
+
+# Ossphilippines First Contribution Instinct Test Separate Folder
+
+## Action
+
+Place test files in a separate test directory.
+
+## Evidence
+
+- Pattern in architecture.testLocation: separate
+
+---
+id: ossphilippines-first-contribution-instinct-commit-prefix-fix
+trigger: "When fixing a bug or correcting data."
+confidence: 0.9
+domain: git
+source: repo-analysis
+source_repo: tadanobutubutu/OSSPhilippines-first-contribution
+---
+
+# Ossphilippines First Contribution Instinct Commit Prefix Fix
+
+## Action
+
+Prefix the commit message with 'fix:'.
+
+## Evidence
+
+- Seen in commit: fix: add json extension to aravind-govindhasamy contributor file
+- Seen in commit: fix: add missing photo urls for shemdg and srijani006
+- Seen in commit: fix: restore data.json deleted in pr #61
+
+---
+id: ossphilippines-first-contribution-instinct-commit-prefix-update
+trigger: "When updating or improving non-bug aspects."
+confidence: 0.8
+domain: git
+source: repo-analysis
+source_repo: tadanobutubutu/OSSPhilippines-first-contribution
+---
+
+# Ossphilippines First Contribution Instinct Commit Prefix Update
+
+## Action
+
+Prefix the commit message with 'update:'.
+
+## Evidence
+
+- Seen in commit: update: detect rebuilt data.json in build workflow
+
+---
+id: ossphilippines-first-contribution-instinct-commit-length
+trigger: "When writing a commit message."
+confidence: 0.7
+domain: git
+source: repo-analysis
+source_repo: tadanobutubutu/OSSPhilippines-first-contribution
+---
+
+# Ossphilippines First Contribution Instinct Commit Length
+
+## Action
+
+Keep the commit message concise (around 50 characters).
+
+## Evidence
+
+- Pattern in commits.averageLength: 49
+
+---
+id: ossphilippines-first-contribution-instinct-update-contributor-profile
+trigger: "When someone needs to add or correct information for a contributor."
+confidence: 0.9
+domain: workflow
+source: repo-analysis
+source_repo: tadanobutubutu/OSSPhilippines-first-contribution
+---
+
+# Ossphilippines First Contribution Instinct Update Contributor Profile
+
+## Action
+
+Edit the relevant contributor's JSON file in the contributors/ directory and commit the changes with a descriptive message.
+
+## Evidence
+
+- Workflow: update-contributor-profile
+- Seen in commits: fix: add json extension to aravind-govindhasamy contributor file
+- Pattern in files: contributors/*.json
+
